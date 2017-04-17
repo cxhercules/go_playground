@@ -1,0 +1,1 @@
+go run main.go |awk -F\: '{print $2}'|base64 --decode >newimage.png
