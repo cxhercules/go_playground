@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restuartant Meal Menu's</title>
+</head>
+<body>
+
+{{range .}}
+    {{.Name}}
+    {{range .Services}}
+      {{.MealTime}}
+      {{range .Menu}}
+          {{.Name}}<br>
+          {{.Description}}<br>
+          {{.Price}}<br>
+      {{end}}
+    {{end}}
+{{end}}
+
+</body>
+</html>
